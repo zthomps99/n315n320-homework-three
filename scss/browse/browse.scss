@@ -1,0 +1,88 @@
+.photoGallery {
+  margin: 0 auto;
+  width: 80%;
+  height: 80%;
+  padding-top: 150px;
+
+  .galleryRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .galleryBlock {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .galleryImg {
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+      margin-left: 15px;
+
+      img {
+        width: cover;
+        height: 100%;
+      }
+    }
+
+    .galleryInfo {
+      width: 150px;
+      height: 200px;
+
+      padding: 12px;
+
+      p {
+        font-size: 13px;
+        font-variant: small-caps;
+      }
+    }
+  }
+}
+
+.button-holder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  .button {
+    margin-left: 10px;
+  }
+}
+
+.button {
+  background-color: rgb(212, 49, 49);
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-button {
+  background-color: rgb(212, 49, 49);
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.view {
+  display: none;
+}
+
+.galleryImg:hover .view {
+  display: flex;
+}
